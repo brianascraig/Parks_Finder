@@ -1,0 +1,16 @@
+.stateParkSelection {
+  height: 20px;
+}
+
+
+.stateSelectionContainer {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+fieldset {
+    border: none;
+  }

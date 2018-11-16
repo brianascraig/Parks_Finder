@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks Finder</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>National Parks Finder</h1>
+    </header>
+    <section role="region" class="js-formContainer">
+      <form method="get" action="" class="js-stateSelectForm">
+        <fieldset class="stateSelectionContainer">
+          <label for="stateSelection">Which state(s) would you like to search for parks?</label>
+          <select id="stateSelection" class="stateSelection" multiple>
+            <optgroup label="Choose state(s)">
+              <option>AL</option>
+              <option>AK</option>
+              <option>AZ</option>
+              <option>AR</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>IA</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>ME</option>
+              <option>MD</option>
+              <option>MA</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MS</option>
+              <option>MO</option>
+              <option>MT</option>
+              <option>NE</option>
+              <option>NV</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NY</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VT</option>
+              <option>VA</option>
+              <option>WA</option>
+              <option>WV</option>
+              <option>WI</option>
+              <option>WY</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <br>
+        <fieldset class="numOfResultsContainer"
+          <label for="numOfResultsSelection">How many results would you like to see?</label>
+          <input type="number" name="numOfResultsSelection" id="numOfResultsSelection"> 
+        </fieldset>
+        <br>
+        <button type="submit" class="js-submitButton">Submit</button>
+      </form>
+    </section>
+    <section role="region" class="js-parkResultsContainer hidden">
+      <p>Results:</p>
+      <div class="js-parkResults">
+      </div>
+    </section>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
